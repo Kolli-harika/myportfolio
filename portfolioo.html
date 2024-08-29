@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harika - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "styless.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                Harika's Portfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href ="about.html">About</a></li>
+                    <li><a href ="project.html">Projects</a></li>
+                    <li><a href ="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class = "firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class = "purple">Harika </span> 
+                <div>
+                    and I am a
+                </div>
+                <span id="element"></span>
+                <div class = "buttonn">
+                    <button id = "down" class="btn" href = "Harika_resume.docx" download = "resumecopy.docx">Download resume</button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src = "developer.jpeg">
+            </div>
+        </section> 
+        <!-- <hr>
+        <section class="secondsection">
+            <span class = "textgrey">What I have done so far</span>
+            <h1> </h1>
+        </section>  -->
+    </main>
+    <footer>
+        <div class="footer">
+             Harika's portfolio
+        </div>
+        <div class="footer_rights">
+            www.harika'sportfolio.com | All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Btech Undergrad','Passionate Web Developer'],
+          typeSpeed: 50,
+        });
+
+        document.getElementById('down').addEventListener('click',function(){
+            console.log('Resume download initiated');
+            var link = document.createElement('a');
+            link.href = 'Harika_resume.docx';
+            link.download = 'resumecopy.docx';
+            link.click();
+        });
+      </script>
+</body>
+</html>
